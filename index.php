@@ -36,7 +36,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                         </div>
                         <div class="forgot-pass">
                             <a href="#" class="mr-7">¿Olvidaste tu contraseña?</a>
-                            <a href="#">Crear Cuenta</a>
+                            <a href="pages/RegisterUser.php">Crear Cuenta</a>
                         </div>
                         <button class="button" type="submit">Iniciar Sesión</button>
                     </form>
