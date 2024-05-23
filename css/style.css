@@ -47,3 +47,20 @@ main {
     z-index: 1000;
     margin-top: 100px;
 }
+
+.header {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.fondo {
+    background-color: #f9c9a9;
+}
+
+.index {
+    margin-top: 100px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.texto {
+    color: #f9c9a9;
+}

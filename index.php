@@ -11,43 +11,19 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
         <link rel="stylesheet" href="css/loginstyle.css"/>
         <link rel="stylesheet" href="css/cardstyle.css"/>
         <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+        <!-- Para la parte del calendario -->
+        <link href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css' rel='stylesheet' />
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js'></script>
     </head>
     <body>
-        <main class="container mx-auto flex">
-            <div class="container">
-                <div class="card" id="card" onmousemove="transformation(event)" onmouseout="stablecard()">
-                    <h3 class="title" id="title">Ospedale</h3>
-                </div>
-            </div>
-            <div class="wrapper">
-                <div class="bg-animate" id="bg-animate"></div>
-                <div class="curved" id="curved"></div>
-                <div class="form-wrapper sign-in">
-                    <form action="#" method="POST">
-                        <h1 class="text-center text-3xl pb-10 text-white">Ospedale</h1>
-                        <p class="text-center text-2xl text-white">Sign In</p>
-                        <div class="input-box">
-                            <input type="email" name="email" required>
-                            <label for="email">Email</label>
-                        </div>
-                        <div class="input-box">
-                            <input type="password" name="password" required>
-                            <label for="password">Password</label>
-                        </div>
-                        <div class="forgot-pass">
-                            <a href="#" class="mr-7">¿Olvidaste tu contraseña?</a>
-                            <a href="pages/RegisterUser.php">Crear Cuenta</a>
-                        </div>
-                        <button class="button" type="submit">Iniciar Sesión</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer class="mt-10 text-center p-5 text-gray-500 font-bold uppercase">Ospdale - Todos los derechos reservados
-        <?php echo date('Y'); ?>
-    </footer>
-    <script src="js/script.js"></script>
-    <script src="js/cardscript.js"></script>
-</body>
+        <?php
+            include './frontcontroller.php';
+        ?>
+        
+        <script src="js/script.js"></script>
+        <script src="js/cardscript.js"></script>
+    </body>
 </html>
