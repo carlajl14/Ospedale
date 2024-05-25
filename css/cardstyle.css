@@ -5,7 +5,7 @@
     perspective: 500px;
 }
 
-.card {
+.tarjeta {
     position: relative;
     width: 450px;
     height: 350px;
@@ -19,7 +19,7 @@
     transition: all .5 ease-out;
 }
 
-.title {
+.titulo {
     color: #f9ebdf;
     position: absolute;
     top: 40%;

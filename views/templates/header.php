@@ -7,8 +7,9 @@ if (isset($_COOKIE['paciente'])) {
     echo '<a href="#" class="text-xl font-bold text-white">Ospedale</a>';
     echo '</div>';
     echo '<nav class="hidden md:flex space-x-4">';
-    echo '<a href="#" class="text-white hover:text-gray-300">Inicio</a>';
-    echo '<a href="#" class="text-white hover:text-gray-300">Pruebas</a>';
+    echo '<a href="index.php?controller=Paciente&action=showCitas" class="text-white hover:text-gray-300">Inicio</a>';
+    echo '<a href="index.php?controller=Prueba&action=showPruebas" class="text-white hover:text-gray-300">Pruebas</a>';
+    echo '<a href="index.php?controller=Medicamento&action=showRecetas" class="text-white hover:text-gray-300">Recetas</a>';
     echo '</nav>';
     echo '<div class="hidden md:flex items-center space-x-2">';
     $paciente = $_COOKIE['paciente'];

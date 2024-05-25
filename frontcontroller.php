@@ -16,8 +16,13 @@ include $_SERVER['DOCUMENT_ROOT'].'/Ospedale/views/MedicoView.php';
 
 //Pacientes
 include $_SERVER['DOCUMENT_ROOT'].'/Ospedale/controllers/PacienteController.php';
-//include $_SERVER['DOCUMENT_ROOT'].'/Ospedale/services/PacienteService.php';
+include $_SERVER['DOCUMENT_ROOT'].'/Ospedale/services/PacienteService.php';
 include $_SERVER['DOCUMENT_ROOT'].'/Ospedale/views/PacienteView.php';
+
+//Medicamentos
+include $_SERVER['DOCUMENT_ROOT'].'/Ospedale/controllers/MedicamentoController.php';
+include $_SERVER['DOCUMENT_ROOT'].'/Ospedale/services/MedicamentoService.php';
+include $_SERVER['DOCUMENT_ROOT'].'/Ospedale/views/MedicamentoView.php';
 
 // Define la acción por defecto
 define('ACCION_DEFECTO', 'index');

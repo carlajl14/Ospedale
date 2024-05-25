@@ -15,8 +15,8 @@ class LoginView {
     public function showLogin() {
         echo '<main class="container mx-auto flex">
             <div class="container">
-                <div class="card" id="card" onmousemove="transformation(event)" onmouseout="stablecard()">
-                    <h3 class="title" id="title">Ospedale</h3>
+                <div class="tarjeta" id="tarjeta" onmousemove="transformation(event)">
+                    <h3 class="titulo" id="titulo">Ospedale</h3>
                 </div>
             </div>
             <div class="wrapper">
